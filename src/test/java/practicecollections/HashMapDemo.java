@@ -11,6 +11,7 @@ public class HashMapDemo {
 		HashMap<Integer,String> hm = new HashMap<Integer,String>();
 		//adding elements to HashMap
 		hm.put(12,"Rahul");
+		hm.put(12,"str");
 		hm.put(13, "Prashant");
 		hm.put(14, "Rohit");
 		hm.put(15, "Paul");

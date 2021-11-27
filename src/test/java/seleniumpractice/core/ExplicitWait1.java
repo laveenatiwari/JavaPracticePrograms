@@ -17,7 +17,7 @@ public class ExplicitWait1 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.name("q")).sendKeys("cheese"+Keys.ENTER);
 		
 		driver.switchTo().frame(0);
